@@ -2,9 +2,14 @@ import React, { useState } from 'react';
 import data from './data.json';
 import Jobs from './components/Jobs';
 import Header from './components/Header';
+import Search from './components/Search';
 
 function App() {
-  const [filterKeywords, setfilterKeywords] = useState([]);
+  const [filterKeywords, setfilterKeywords] = useState("");
+
+  const setSearchKeywords=(data)=>{
+    setfilterKeywords(data);
+  }
 
   const addFilterKeywords = (data) => {
     if (!filterKeywords.includes(data)) {
@@ -20,7 +25,6 @@ function App() {
   const clearAll = () => {
     setfilterKeywords([]);
   }
-
   return (
     <div>
       <div className="header"></div>
@@ -31,3 +35,7 @@ function App() {
 }
 
 export default App;
+
+//SE QUISER PESQUISAR DIGITANDO AS PALAVRAS-CHAVES.
+// SO ADICIONAL EM BAIXO DA DIV CLASSSNAME HEADER
+// <Search setSearchKeyword={setSearchKeywords} />

@@ -12,7 +12,7 @@
   
     box-shadow: 0px 4px 6px 4px rgba(91, 164, 164, 0.2);
   
-    @media only screen and (max-width: 375px) {
+    @media only screen and (max-width: 700px) {
       flex-direction: column;
       align-items: flex-start;
       width: 80vw;
@@ -25,7 +25,7 @@
       align-items: center;
       padding-right: 1.5rem;
   
-      @media only screen and (max-width: 375px) {
+      @media only screen and (max-width: 700px) {
         position: absolute;
         top: -2rem;
         img {
@@ -40,7 +40,7 @@
       flex-direction: column;
       flex-grow: 1;
   
-      @media only screen and (max-width: 375px) {
+      @media only screen and (max-width: 700px) {
         flex-grow: 0;
         padding: 1.3rem 0;
       }
@@ -65,7 +65,7 @@
         }
   
         .featured {
-          background-color: var(--very-dark-greyish);
+          background-color: var(--very-dark-grayish);
         }
       }
   
@@ -90,7 +90,7 @@
       flex-wrap: wrap;
       justify-content: space-between;
   
-      @media only screen and (max-width: 375px) {
+      @media only screen and (max-width: 700px) {
         border-top: 1px solid var(--dark-greyish);
         padding-top: 1rem;
         justify-content: flex-start;
@@ -106,7 +106,7 @@
           color: #fff;
         }
   
-        @media only screen and (max-width: 375px) {
+        @media only screen and (max-width: 700px) {
           margin-bottom: 1rem;
         }
   

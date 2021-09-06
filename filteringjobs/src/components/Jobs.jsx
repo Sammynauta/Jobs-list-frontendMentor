@@ -4,6 +4,18 @@ const Jobs = ({ data, setKeywords, keywords }) => {
   console.log(data);
   const [filteredData, setfilteredData] = useState([]);
 
+  //SE QUISER PESQUISAR DIGITANDO AS PALAVRAS-CHAVES.
+  // const SearchFunc = () => {
+  //   if (keywords.length > 0) {
+  //     const newData = filteredData.filter((d) => {
+  //       return d.position.toLocaleLowerCase().includes(keywords);
+  //     });
+  //     setfilteredData(newData);
+  //   } else {
+  //     setfilteredData(data);
+  //   }
+  // };
+
   const ModifiedData = () => {
     if (keywords.length > 0) {
       const newData = filteredData.filter((d) => {

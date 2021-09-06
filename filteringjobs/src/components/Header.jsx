@@ -9,7 +9,7 @@ const Header = ({ keywords, removeKeywords, clearAll }) => {
           return (
             <li key={id}>
               {key}
-              <button onClick={() => removeKeywords(key)}>
+              <button className='close' onClick={() => removeKeywords(key)}>
                 <img src={close} alt="xisinho" />
               </button>
             </li>
